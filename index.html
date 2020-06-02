@@ -1,0 +1,59 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather Forecast</title>
+	<style type="text/css">
+		label{
+			display: block;
+			color: green;
+			font-size: 20px;
+
+		}
+		h1:hover{
+			font-size: 60px;
+		}
+		input{
+			color: red;
+			font-size: 20px;
+			background-color:pink;
+		}
+		button{
+			background-color: blue;
+			border-style: none;
+			border-radius: 10%;
+			color: white;
+			padding: 8px;
+			padding-right: 15px;
+			padding-left: 15px;
+		}
+		button:hover{
+			background-color: orange;
+			font-size: 20px;
+		}
+		select{
+			font-size: 20px;
+		}label.unit{
+			display: inline;
+			color: green;
+			font-size: 20px;
+
+		}
+	</style>
+
+</head>
+<body style="text-align:center;">
+	<h1 style="color: orange">Welcome to the weather Forecast</h1>
+	<form action="/" method="POST" id="tempform">
+		<label for="city">Enter Your City Name :</label><br>
+		<input id ="city" type="text" name="cityName" value="" required><br><br>
+		<label for="unit" class="unit">Choose a Temp. Unit: </label>
+		<select id="unit" name="unit" form="tempform" required>
+		  <option value="C">C</option>
+		  <option value="K">K</option>
+		  <option value="F">F</option>
+		</select><br><br>
+		<button type="submit" >Find</button>
+	</form>
+</body>
+</html>
